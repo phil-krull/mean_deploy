@@ -1,0 +1,13 @@
+<h1>Add Animal</h1>
+<form (submit)='onSubmit()'>
+  Name:<input type="text" name="name" [(ngModel)]='animal.name'>
+  <br>
+  Location:<input type="text" name="location" [(ngModel)]='animal.location'>
+  <br>
+  Number of Legs:<input type="number" name="numberOfLegs" [(ngModel)]='animal.numberOfLegs'>
+  <br>
+  Size:<input type="text" name="size" [(ngModel)]='animal.size'>
+  <br>
+  <input type="submit" name="" value="Add">
+</form>
+{{ animal | json }}

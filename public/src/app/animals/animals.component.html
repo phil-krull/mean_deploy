@@ -1,0 +1,20 @@
+<p>
+  animals works!
+</p>
+
+<table border='1'>
+  <tr>
+    <th>Name:</th>
+    <th>Location:</th>
+    <th>Number of legs:</th>
+    <th>Size:</th>
+  </tr>
+  <tr *ngFor='let animal of animals'>
+    <td>{{ animal.name }}</td>
+    <td>{{ animal.location }}</td>
+    <td>{{ animal.numberOfLegs }}</td>
+    <td>{{ animal.size }}</td>
+  </tr>
+</table>
+
+<!-- {{ _animalService.animals | json }} -->
